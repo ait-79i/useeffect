@@ -1,12 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Axios from "./_1stConnection/Axios";
+import Fetch from "./_1stConnection/Fetch";
+// import Axios from "./_1stConnection/Axios";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<Axios />
+		<Fetch />
+		{/* <Axios /> */}
 	</React.StrictMode>
 );
 
