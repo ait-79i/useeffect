@@ -1,0 +1,8 @@
+.child {
+	width: 250px;
+	text-align: center;
+	border: 1px solid grey;
+	border-radius: 6px;
+	background-color: green;
+	margin: 20px 0px;
+}
