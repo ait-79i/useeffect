@@ -11,7 +11,7 @@ const Axios = () => {
 	// }, []);
 
 	useEffect(() => {
-		//! M1 ASYNC-AWAIT
+		//! M2 ASYNC-AWAIT
 		const getData = async () => {
 			const utilisateurs = await axios.get(
 				"https://jsonplaceholder.typicode.com/users"
@@ -22,7 +22,7 @@ const Axios = () => {
 	}, []);
 	return (
 		<div>
-			<h1>Users Number : {users.length}</h1>
+			<h1>Users Number : {users.length} using Axios librory</h1>
 			{users.map((user) => {
 				return (
 					<div className="child" key={user.id}>
