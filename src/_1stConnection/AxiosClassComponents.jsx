@@ -5,14 +5,19 @@ export default class AxiosClassComponents extends Component {
   constructor() {
     super()
     this.state = {
-      users:[]
+      users: []
     }
   }
-  componentDidMount() {
-    axios.get('https://jsonplaceholder.typicode.com/users')
-      .then((res) => { this.setState({ users: res.data }) })
-  }
+  // componentDidMount() {//! AXIOS librory
+  //   axios.get('https://jsonplaceholder.typicode.com/users')
+  //     .then((res) => { this.setState({ users: res.data }) })
+  // }
 
+  componentDidMount() {//! FETCH FUNCTION
+    fetch('https://jsonplaceholder.typicode.com/users')
+      .then((response) => { console.log(response); return response.json() })
+      .then((users) => { this.setState({ utilisateurs: users }) })
+  }
   render() {
     return (
       <div>
