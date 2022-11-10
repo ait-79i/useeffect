@@ -2,15 +2,19 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 // import Axios from "./_1stConnection/Axios";
 // import Fetch from "./_1stConnection/Fetch";
+// import AxiosClassComponents from "./_1stConnection/AxiosClassComponents";
+// import Exersise1 from "./Exersises/Exersise1";
+import Exersise2 from "./Exersises/Exersise2";
 import reportWebVitals from "./reportWebVitals";
-import AxiosClassComponents from "./_1stConnection/AxiosClassComponents";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
 	<React.StrictMode>
-		<AxiosClassComponents />
 		{/* <Axios /> */}
 		{/* <Fetch /> */}
+		{/* <AxiosClassComponents /> */}
+		{/* <Exersise1/> */}
+		<Exersise2/>
 	</React.StrictMode>
 );
 
