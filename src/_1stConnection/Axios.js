@@ -3,6 +3,7 @@ import axios from "axios";
 
 const Axios = () => {
 	const [users, setUsers] = useState([]);
+	
 	// useEffect(() => {  //! M1
 	// 	axios.get("https://jsonplaceholder.typicode.com/users").then((res) => {
 	// 		setUsers(res.data);

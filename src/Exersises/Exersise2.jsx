@@ -12,8 +12,8 @@ const Exersise2 = () => {
     }
     getData(id)
   }, [id])
-  return (<>
 
+  return (<>
     <div>
       <h1>Details utillisateur</h1>
       <label htmlFor="id"></label>
@@ -22,12 +22,12 @@ const Exersise2 = () => {
       }} />
       <button onClick={() => setFlag(false)}>submit</button>
     </div>
-
     {
       flag === true ?
         <div className="child" >
+          {/* {console.log(user)} */}
           <h3 style={{ color: "rgb(92,63,3)" }}>
-            id : {id} 
+            id : {id}
             nom:
             {user.name}
             {user.username}
@@ -38,14 +38,10 @@ const Exersise2 = () => {
           <p>rue:{user.address.street}</p>
           <p>ville:{user.address.city}</p>
         </div>
-        
-
-       :
-  <></>
-}
+        :
+        <></>
+    }
   </>
-  
-    
   )
 }
 
