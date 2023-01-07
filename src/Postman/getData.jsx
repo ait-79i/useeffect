@@ -19,6 +19,7 @@ function Get(){
                 }
                 return (
                   <div>
+                    
                     <input type="text" value={id} onChange={(e)=>setId(e.target.value)} />
                     <br />
                     <button type="button" onClick={handleClick}>Envoyer</button>
